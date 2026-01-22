@@ -10,3 +10,4 @@ DerivedData/
 *.dSYM
 .swiftpm/
 build/*
+reddit_post.txt
