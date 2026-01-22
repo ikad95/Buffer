@@ -339,28 +339,37 @@ class History { // swiftlint:disable:this type_body_length
       return
     }
 
-    let modifierFlags = NSApp.currentEvent?.modifierFlags
+    // Use NSEvent.modifierFlags for current state, more reliable than NSApp.currentEvent
+    let modifierFlags = NSEvent.modifierFlags
       .intersection(.deviceIndependentFlagsMask)
-      .subtracting([.capsLock, .numericPad, .function]) ?? []
+      .subtracting([.capsLock, .numericPad, .function])
 
-    switch HistoryItemAction(modifierFlags) {
-    case .copy:
-      AppState.shared.popup.close()
-      Clipboard.shared.copy(item.item)
-    case .paste:
-      AppState.shared.popup.close()
-      Clipboard.shared.copy(item.item)
-      Clipboard.shared.paste()
-    case .pasteWithoutFormatting:
-      AppState.shared.popup.close()
-      Clipboard.shared.copy(item.item, removeFormatting: true)
-      Clipboard.shared.paste()
-    case .unknown:
-      // Default behavior: copy (and paste if pasteByDefault is enabled)
+    if modifierFlags.isEmpty {
       AppState.shared.popup.close()
       Clipboard.shared.copy(item.item, removeFormatting: Defaults[.removeFormattingByDefault])
       if Defaults[.pasteByDefault] {
         Clipboard.shared.paste()
+      }
+    } else {
+      switch HistoryItemAction(modifierFlags) {
+      case .copy:
+        AppState.shared.popup.close()
+        Clipboard.shared.copy(item.item)
+      case .paste:
+        AppState.shared.popup.close()
+        Clipboard.shared.copy(item.item)
+        Clipboard.shared.paste()
+      case .pasteWithoutFormatting:
+        AppState.shared.popup.close()
+        Clipboard.shared.copy(item.item, removeFormatting: true)
+        Clipboard.shared.paste()
+      case .unknown:
+        // Fallback to default copy behavior for unrecognized modifiers
+        AppState.shared.popup.close()
+        Clipboard.shared.copy(item.item, removeFormatting: Defaults[.removeFormattingByDefault])
+        if Defaults[.pasteByDefault] {
+          Clipboard.shared.paste()
+        }
       }
     }
 
