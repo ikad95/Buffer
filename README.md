@@ -1,34 +1,31 @@
+# Buffer
 
-<img width="128px" src="https://maccy.app/img/maccy/Logo.png" alt="Logo" align="left" />
-
-# [Maccy](https://maccy.app)
-
-[![Downloads](https://img.shields.io/github/downloads/p0deje/Maccy/total.svg)](https://github.com/p0deje/Maccy/releases/latest)
-[![Build Status](https://img.shields.io/bitrise/716921b669780314/master?token=3pMiCb5dpFzlO-7jTYtO3Q)](https://app.bitrise.io/app/716921b669780314)
-
-Maccy is a lightweight clipboard manager for macOS. It keeps the history of what you copy
+Buffer is a lightweight clipboard manager for macOS. It keeps the history of what you copy
 and lets you quickly navigate, search, and use previous clipboard contents.
 
-Maccy works on macOS Sonoma 14 or higher.
+**100% local. Zero network connections. AES-256 encrypted.**
+
+Buffer works on macOS Sonoma 14 or higher.
 
 <!-- vim-markdown-toc GFM -->
 
 * [Features](#features)
 * [Install](#install)
 * [Usage](#usage)
+* [Security](#security)
+* [Storage](#storage)
+* [Search Modes](#search-modes)
 * [Advanced](#advanced)
   * [Ignore Copied Items](#ignore-copied-items)
   * [Ignore Custom Copy Types](#ignore-custom-copy-types)
-  * [Speed up Clipboard Check Interval](#speed-up-clipboard-check-interval)
 * [FAQ](#faq)
   * [Why doesn't it paste when I select an item in history?](#why-doesnt-it-paste-when-i-select-an-item-in-history)
-  * [When assigning a hotkey to open Maccy, it says that this hotkey is already used in some system setting.](#when-assigning-a-hotkey-to-open-maccy-it-says-that-this-hotkey-is-already-used-in-some-system-setting)
-  * [How to restore hidden footer?](#how-to-restore-hidden-footer)
-  * [How to ignore copies from Universal Clipboard?](#how-to-ignore-copies-from-universal-clipboard)
-  * [My keyboard shortcut stopped working in password fields. How do I fix this?](#my-keyboard-shortcut-stopped-working-in-password-fields-how-do-i-fix-this)
-* [Translations](#translations)
-* [Motivation](#motivation)
+  * [How do I enable unlimited history?](#how-do-i-enable-unlimited-history)
+  * [How does encryption work?](#how-does-encryption-work)
+* [Build from Source](#build-from-source)
+* [Run Tests](#run-tests)
 * [License](#license)
+* [Acknowledgements](#acknowledgements)
 
 <!-- vim-markdown-toc -->
 
@@ -37,20 +34,30 @@ Maccy works on macOS Sonoma 14 or higher.
 * Lightweight and fast
 * Keyboard-first
 * Secure and private
+* **AES-256 encrypted storage**
+* **Zero network connections**
+* **Unlimited history support**
+* **FTS5 full-text search**
+* **LRU auto-cleanup**
 * Native UI
 * Open source and free
 
 ## Install
 
-Download the latest version from the [releases](https://github.com/p0deje/Maccy/releases/latest) page, or use [Homebrew](https://brew.sh/):
+Clone the repository and build from source:
 
 ```sh
-brew install maccy
+git clone <repo>
+cd Buffer
+open Buffer.xcodeproj
 ```
+
+1. Select your signing team in project settings
+2. Build and run (<kbd>COMMAND (⌘)</kbd> + <kbd>R</kbd>)
 
 ## Usage
 
-1. <kbd>SHIFT (⇧)</kbd> + <kbd>COMMAND (⌘)</kbd> + <kbd>C</kbd> to popup Maccy or click on its icon in the menu bar.
+1. <kbd>SHIFT (⇧)</kbd> + <kbd>COMMAND (⌘)</kbd> + <kbd>C</kbd> to popup Buffer or click on its icon in the menu bar.
 2. Type what you want to find.
 3. To select the history item you wish to copy, press <kbd>ENTER</kbd>, or click the item, or use <kbd>COMMAND (⌘)</kbd> + `n` shortcut.
 4. To choose the history item and paste, press <kbd>OPTION (⌥)</kbd> + <kbd>ENTER</kbd>, or <kbd>OPTION (⌥)</kbd> + <kbd>CLICK</kbd> the item, or use <kbd>OPTION (⌥)</kbd> + `n` shortcut.
@@ -58,19 +65,65 @@ brew install maccy
 6. To delete the history item, press <kbd>OPTION (⌥)</kbd> + <kbd>DELETE (⌫)</kbd>.
 7. To see the full text of the history item, wait a couple of seconds for tooltip.
 8. To pin the history item so that it remains on top of the list, press <kbd>OPTION (⌥)</kbd> + <kbd>P</kbd>. The item will be moved to the top with a random but permanent keyboard shortcut. To unpin it, press <kbd>OPTION (⌥)</kbd> + <kbd>P</kbd> again.
-9. To clear all unpinned items, select _Clear_ in the menu, or press <kbd>OPTION (⌥)</kbd> + <kbd>COMMAND (⌘)</kbd> + <kbd>DELETE (⌫)</kbd>. To clear all items including pinned, select _Clear_ in the menu with  <kbd>OPTION (⌥)</kbd> pressed, or press <kbd>SHIFT (⇧)</kbd> + <kbd>OPTION (⌥)</kbd> + <kbd>COMMAND (⌘)</kbd> + <kbd>DELETE (⌫)</kbd>.
-10. To disable Maccy and ignore new copies, click on the menu icon with <kbd>OPTION (⌥)</kbd> pressed.
+9. To clear all unpinned items, select _Clear_ in the menu, or press <kbd>OPTION (⌥)</kbd> + <kbd>COMMAND (⌘)</kbd> + <kbd>DELETE (⌫)</kbd>. To clear all items including pinned, select _Clear_ in the menu with <kbd>OPTION (⌥)</kbd> pressed, or press <kbd>SHIFT (⇧)</kbd> + <kbd>OPTION (⌥)</kbd> + <kbd>COMMAND (⌘)</kbd> + <kbd>DELETE (⌫)</kbd>.
+10. To disable Buffer and ignore new copies, click on the menu icon with <kbd>OPTION (⌥)</kbd> pressed.
 11. To ignore only the next copy, click on the menu icon with <kbd>OPTION (⌥)</kbd> + <kbd>SHIFT (⇧)</kbd> pressed.
 12. To customize the behavior, check "Preferences…" window, or press <kbd>COMMAND (⌘)</kbd> + <kbd>,</kbd>.
+
+## Security
+
+Buffer is built with enterprise-grade security:
+
+| Feature | Implementation |
+|---------|----------------|
+| Encryption | AES-256-GCM via CryptoKit |
+| Key Storage | macOS Keychain |
+| Data at Rest | Encrypted SQLite |
+| Network | Zero outbound connections |
+| Updates | Disabled (no Sparkle) |
+| Analytics | None |
+
+All clipboard content is encrypted before being written to disk. The encryption key is stored in the macOS Keychain and never leaves your device.
+
+## Storage
+
+Buffer provides flexible storage management in Preferences:
+
+* **Unlimited History** - Toggle to remove item limits (supports millions of items)
+* **Custom Limit** - Set any limit from 1 to 1,000,000 items
+* **Auto-Cleanup (LRU)** - Automatically remove items older than X days
+* **Keep Days** - Configure retention period (1-365 days)
+
+Data is stored in:
+
+| File | Purpose |
+|------|---------|
+| `~/Library/Application Support/Buffer/Storage.sqlite` | Encrypted clipboard history |
+| `~/Library/Application Support/Buffer/SearchIndex.sqlite` | FTS5 search index |
+| macOS Keychain | AES-256 encryption key |
+
+## Search Modes
+
+Buffer supports multiple search modes:
+
+| Mode | Description |
+|------|-------------|
+| Exact | Case-insensitive substring match |
+| Fuzzy | Typo-tolerant fuzzy matching |
+| Regex | Regular expression search |
+| Mixed | Tries exact, then regex, then fuzzy |
+| Full-Text | FTS5 full-text search with BM25 ranking |
+
+Full-text search uses SQLite FTS5 with Porter stemming for intelligent matching.
 
 ## Advanced
 
 ### Ignore Copied Items
 
-You can tell Maccy to ignore all copied items:
+You can tell Buffer to ignore all copied items:
 
 ```sh
-defaults write org.p0deje.Maccy ignoreEvents true # default is false
+defaults write org.codexvault.Buffer ignoreEvents true # default is false
 ```
 
 This is useful if you have some workflow for copying sensitive data. You can set `ignoreEvents` to true, copy the data and set `ignoreEvents` back to false.
@@ -79,8 +132,8 @@ You can also click the menu icon with <kbd>OPTION (⌥)</kbd> pressed. To ignore
 
 ### Ignore Custom Copy Types
 
-By default Maccy will ignore certain copy types that are considered to be confidential
-or temporary. The default list always include the following types:
+By default Buffer will ignore certain copy types that are considered to be confidential
+or temporary. The default list always includes the following types:
 
 * `org.nspasteboard.TransientType`
 * `org.nspasteboard.ConcealedType`
@@ -96,74 +149,52 @@ or overwritten:
 * `net.antelle.keeweb`
 
 You can add additional custom types using settings.
-To find what custom types are used by an application, you can use
-free application [Pasteboard-Viewer](https://github.com/sindresorhus/Pasteboard-Viewer).
-Simply download the application, open it, copy something from the application you
-want to ignore and look for any custom types in the left sidebar. [Here is an example
-of using this approach to ignore Adobe InDesign](https://github.com/p0deje/Maccy/issues/125).
-
-### Speed up Clipboard Check Interval
-
-By default, Maccy checks clipboard every 500 ms, which should be enough for most users. If you want
-to speed it up, you can change it with `defaults`:
-
-```sh
-defaults write org.p0deje.Maccy clipboardCheckInterval 0.1 # 100 ms
-```
 
 ## FAQ
 
 ### Why doesn't it paste when I select an item in history?
 
 1. Make sure you have "Paste automatically" enabled in Preferences.
-2. Make sure "Maccy" is added to System Settings -> Privacy & Security -> Accessibility.
+2. Make sure "Buffer" is added to System Settings -> Privacy & Security -> Accessibility.
 
-### When assigning a hotkey to open Maccy, it says that this hotkey is already used in some system setting.
+### How do I enable unlimited history?
 
-1. Open System settings -> Keyboard -> Keyboard Shortcuts.
-2. Find where that hotkey is used. For example, "Convert text to simplified Chinese" is under Services -> Text.
-3. Disable that hotkey or remove assigned combination ([screenshot](https://github.com/p0deje/Maccy/assets/576152/446719e6-c3e5-4eb0-95fb-5a811066487f)).
-4. Restart Maccy.
-5. Assign hotkey in Maccy settings.
+1. Open Preferences (<kbd>COMMAND (⌘)</kbd> + <kbd>,</kbd>)
+2. Go to Storage settings
+3. Toggle "Unlimited History" on
 
-### How to restore hidden footer?
+### How does encryption work?
 
-1. Open Maccy window.
-2. Press <kbd>COMMAND (⌘)</kbd> + <kbd>,</kbd> to open preferences.
-3. Enable footer in Appearance section.
+Buffer uses AES-256-GCM encryption via Apple's CryptoKit framework. When you copy something:
 
-If for some reason it doesn't work, run the following command in Terminal.app:
+1. The clipboard content is encrypted using a 256-bit key
+2. The encrypted data is stored in SQLite
+3. The encryption key is stored securely in macOS Keychain
+4. When you access an item, it's decrypted on-the-fly
+
+The encryption key never leaves your device. There are zero network connections.
+
+## Build from Source
 
 ```sh
-defaults write org.p0deje.Maccy showFooter 1
+git clone <repo>
+cd Buffer
+open Buffer.xcodeproj
 ```
 
-### How to ignore copies from [Universal Clipboard](https://support.apple.com/en-us/102430)?
+1. Select your signing team in project settings
+2. Build and run (<kbd>COMMAND (⌘)</kbd> + <kbd>R</kbd>)
 
-1. Open Preferences -> Ignore -> Pasteboard Types.
-2. Add `com.apple.is-remote-clipboard`.
+## Run Tests
 
-### My keyboard shortcut stopped working in password fields. How do I fix this?
-
-If your shortcut produces a character (like `Option+C` → "ç"), macOS security may block it in password fields. Use [Karabiner-Elements](https://karabiner-elements.pqrs.org/) to remap your shortcut to a different combination like `Cmd+Shift+C`. [See detailed solution](docs/keyboard-shortcut-password-fields.md).
-
-## Translations
-
-The translations are hosted in [Weblate](https://hosted.weblate.org/engage/maccy/).
-You can use it to suggest changes in translations and localize the application to a new language.
-
-[![Translation status](https://hosted.weblate.org/widget/maccy/multi-auto.svg)](https://hosted.weblate.org/engage/maccy/)
-
-## Motivation
-
-There are dozens of similar applications out there, so why build another?
-Over the past years since I moved from Linux to macOS, I struggled to find
-a clipboard manager that is as free and simple as [Parcellite](http://parcellite.sourceforge.net),
-but I couldn't. So I've decided to build one.
-
-Also, I wanted to learn Swift and get acquainted with macOS application development.
-
+```sh
+xcodebuild test -project Buffer.xcodeproj -scheme Buffer -destination 'platform=macOS'
+```
 
 ## License
 
 [MIT](./LICENSE)
+
+## Acknowledgements
+
+Built on the foundation of [Maccy](https://github.com/p0deje/Maccy) by Alex Rodionov.
