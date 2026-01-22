@@ -121,6 +121,12 @@ class History { // swiftlint:disable:this type_body_length
     }
 
     updateShortcuts()
+
+    // Set initial selection after items are loaded
+    if AppState.shared.selection == nil {
+      AppState.shared.selection = unpinnedItems.first?.id ?? pinnedItems.first?.id
+    }
+
     // Ensure that panel size is proper *after* loading all items.
     Task {
       AppState.shared.popup.needsResize = true
