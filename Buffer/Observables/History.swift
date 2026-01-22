@@ -343,27 +343,24 @@ class History { // swiftlint:disable:this type_body_length
       .intersection(.deviceIndependentFlagsMask)
       .subtracting([.capsLock, .numericPad, .function]) ?? []
 
-    if modifierFlags.isEmpty {
+    switch HistoryItemAction(modifierFlags) {
+    case .copy:
+      AppState.shared.popup.close()
+      Clipboard.shared.copy(item.item)
+    case .paste:
+      AppState.shared.popup.close()
+      Clipboard.shared.copy(item.item)
+      Clipboard.shared.paste()
+    case .pasteWithoutFormatting:
+      AppState.shared.popup.close()
+      Clipboard.shared.copy(item.item, removeFormatting: true)
+      Clipboard.shared.paste()
+    case .unknown:
+      // Default behavior: copy (and paste if pasteByDefault is enabled)
       AppState.shared.popup.close()
       Clipboard.shared.copy(item.item, removeFormatting: Defaults[.removeFormattingByDefault])
       if Defaults[.pasteByDefault] {
         Clipboard.shared.paste()
-      }
-    } else {
-      switch HistoryItemAction(modifierFlags) {
-      case .copy:
-        AppState.shared.popup.close()
-        Clipboard.shared.copy(item.item)
-      case .paste:
-        AppState.shared.popup.close()
-        Clipboard.shared.copy(item.item)
-        Clipboard.shared.paste()
-      case .pasteWithoutFormatting:
-        AppState.shared.popup.close()
-        Clipboard.shared.copy(item.item, removeFormatting: true)
-        Clipboard.shared.paste()
-      case .unknown:
-        return
       }
     }
 
