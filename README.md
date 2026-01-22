@@ -197,4 +197,4 @@ xcodebuild test -project Buffer.xcodeproj -scheme Buffer -destination 'platform=
 
 ## Acknowledgements
 
-Built on the foundation of [Maccy](https://github.com/p0deje/Maccy) by Alex Rodionov.
+Built on the foundation of [Maccy](https://github.com/p0deje/Maccy) by Alex Rodionov
