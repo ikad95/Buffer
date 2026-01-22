@@ -67,7 +67,7 @@ class AppState: Sendable {
 
   @MainActor
   func select() {
-    if let item = history.selectedItem, history.items.contains(item) {
+    if let item = history.selectedItem {
       history.select(item)
     } else if let item = footer.selectedItem {
       // TODO: Use item.suppressConfirmation, but it's not updated!
@@ -76,7 +76,7 @@ class AppState: Sendable {
       } else {
         item.action()
       }
-    } else {
+    } else if !history.searchQuery.isEmpty {
       Clipboard.shared.copy(history.searchQuery)
       history.searchQuery = ""
     }
