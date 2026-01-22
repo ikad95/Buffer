@@ -1,0 +1,16 @@
+{
+  "" : {
+    "const-values" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/LaunchAtLogin.build/Release/LaunchAtLogin.build/Objects-normal/arm64/LaunchAtLogin-primary.swiftconstvalues",
+    "dependencies" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/LaunchAtLogin.build/Release/LaunchAtLogin.build/Objects-normal/arm64/LaunchAtLogin-primary.d",
+    "diagnostics" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/LaunchAtLogin.build/Release/LaunchAtLogin.build/Objects-normal/arm64/LaunchAtLogin-primary.dia",
+    "emit-module-dependencies" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/LaunchAtLogin.build/Release/LaunchAtLogin.build/Objects-normal/arm64/LaunchAtLogin-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/LaunchAtLogin.build/Release/LaunchAtLogin.build/Objects-normal/arm64/LaunchAtLogin-primary-emit-module.dia",
+    "pch" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/LaunchAtLogin.build/Release/LaunchAtLogin.build/Objects-normal/arm64/LaunchAtLogin-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/LaunchAtLogin.build/Release/LaunchAtLogin.build/Objects-normal/arm64/LaunchAtLogin-primary.swiftdeps"
+  },
+  "/Users/moulik.adak/buffer/Buffer/build/SourcePackages/checkouts/LaunchAtLogin-Modern/Sources/LaunchAtLogin/LaunchAtLogin.swift" : {
+    "index-unit-output-path" : "/LaunchAtLogin.build/Release/LaunchAtLogin.build/Objects-normal/arm64/LaunchAtLogin.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/LaunchAtLogin.build/Release/LaunchAtLogin.build/Objects-normal/arm64/LaunchAtLogin.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/LaunchAtLogin.build/Release/LaunchAtLogin.build/Objects-normal/arm64/LaunchAtLogin.o"
+  }
+}

@@ -1,0 +1,456 @@
+{
+  "" : {
+    "const-values" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Buffer-primary.swiftconstvalues",
+    "dependencies" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Buffer-primary.d",
+    "diagnostics" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Buffer-primary.dia",
+    "emit-module-dependencies" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Buffer-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Buffer-primary-emit-module.dia",
+    "pch" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Buffer-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Buffer-primary.swiftdeps"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/About.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/About.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/About.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/About.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Accessibility.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Accessibility.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Accessibility.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Accessibility.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/AppDelegate.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/AppDelegate.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/AppDelegate.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/AppDelegate.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/ApplicationImage.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/ApplicationImage.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/ApplicationImage.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/ApplicationImage.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/ApplicationImageCache.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/ApplicationImageCache.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/ApplicationImageCache.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/ApplicationImageCache.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/BufferApp.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/BufferApp.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/BufferApp.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/BufferApp.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Clipboard.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Clipboard.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Clipboard.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Clipboard.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/ColorImage.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/ColorImage.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/ColorImage.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/ColorImage.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Extensions/Collection+Surrounding.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Collection+Surrounding.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Collection+Surrounding.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Collection+Surrounding.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Extensions/Color+Random.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Color+Random.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Color+Random.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Color+Random.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Extensions/Defaults.Keys+Names.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Defaults.Keys+Names.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Defaults.Keys+Names.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Defaults.Keys+Names.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Extensions/Dictionary+RemoveItem.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Dictionary+RemoveItem.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Dictionary+RemoveItem.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Dictionary+RemoveItem.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Extensions/KeyEquivalent+Keys.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/KeyEquivalent+Keys.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/KeyEquivalent+Keys.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/KeyEquivalent+Keys.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Extensions/KeyboardShortcuts.Name+Shortcuts.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/KeyboardShortcuts.Name+Shortcuts.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/KeyboardShortcuts.Name+Shortcuts.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/KeyboardShortcuts.Name+Shortcuts.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Extensions/ModifierFlags+Description.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/ModifierFlags+Description.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/ModifierFlags+Description.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/ModifierFlags+Description.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Extensions/NSApplication+Windows.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSApplication+Windows.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSApplication+Windows.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSApplication+Windows.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Extensions/NSImage+Names.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSImage+Names.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSImage+Names.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSImage+Names.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Extensions/NSImage+Resized.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSImage+Resized.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSImage+Resized.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSImage+Resized.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Extensions/NSPasteboard.PasteboardType+Types.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSPasteboard.PasteboardType+Types.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSPasteboard.PasteboardType+Types.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSPasteboard.PasteboardType+Types.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Extensions/NSPoint+DefaultsSerializable.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSPoint+DefaultsSerializable.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSPoint+DefaultsSerializable.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSPoint+DefaultsSerializable.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Extensions/NSRect+Centered.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSRect+Centered.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSRect+Centered.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSRect+Centered.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Extensions/NSRunningApplication+WindowFrame.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSRunningApplication+WindowFrame.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSRunningApplication+WindowFrame.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSRunningApplication+WindowFrame.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Extensions/NSScreen+ForPopup.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSScreen+ForPopup.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSScreen+ForPopup.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSScreen+ForPopup.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Extensions/NSSize+DefaultsSerializable.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSSize+DefaultsSerializable.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSSize+DefaultsSerializable.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSSize+DefaultsSerializable.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Extensions/NSSound+Named.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSSound+Named.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSSound+Named.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSSound+Named.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Extensions/NSWorkspace+ApplicationName.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSWorkspace+ApplicationName.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSWorkspace+ApplicationName.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/NSWorkspace+ApplicationName.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Extensions/Sauce+KeyboardShortcuts.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Sauce+KeyboardShortcuts.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Sauce+KeyboardShortcuts.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Sauce+KeyboardShortcuts.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Extensions/Settings.PaneIdentifier+Panes.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Settings.PaneIdentifier+Panes.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Settings.PaneIdentifier+Panes.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Settings.PaneIdentifier+Panes.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Extensions/String+Identifiable.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/String+Identifiable.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/String+Identifiable.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/String+Identifiable.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Extensions/String+Shortened.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/String+Shortened.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/String+Shortened.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/String+Shortened.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/FloatingPanel.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/FloatingPanel.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/FloatingPanel.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/FloatingPanel.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/HighlightMatch.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/HighlightMatch.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/HighlightMatch.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/HighlightMatch.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/HistoryItemAction.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/HistoryItemAction.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/HistoryItemAction.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/HistoryItemAction.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/AppIntentError.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/AppIntentError.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/AppIntentError.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/AppIntentError.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Clear.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Clear.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Clear.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Clear.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Delete.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Delete.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Delete.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Delete.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Get.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Get.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Get.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Get.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/HistoryItemAppEntity.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/HistoryItemAppEntity.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/HistoryItemAppEntity.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/HistoryItemAppEntity.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Select.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Select.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Select.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Select.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/KeyChord.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/KeyChord.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/KeyChord.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/KeyChord.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/KeyShortcut.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/KeyShortcut.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/KeyShortcut.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/KeyShortcut.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/KeyboardLayout.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/KeyboardLayout.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/KeyboardLayout.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/KeyboardLayout.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/MenuIcon.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/MenuIcon.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/MenuIcon.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/MenuIcon.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Models/HistoryItem.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/HistoryItem.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/HistoryItem.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/HistoryItem.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Models/HistoryItemContent.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/HistoryItemContent.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/HistoryItemContent.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/HistoryItemContent.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Notifier.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Notifier.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Notifier.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Notifier.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Observables/AppState.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/AppState.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/AppState.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/AppState.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Observables/Footer.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Footer.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Footer.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Footer.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Observables/FooterItem.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/FooterItem.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/FooterItem.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/FooterItem.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Observables/History.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/History.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/History.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/History.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Observables/HistoryItemDecorator.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/HistoryItemDecorator.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/HistoryItemDecorator.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/HistoryItemDecorator.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Observables/ModifierFlags.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/ModifierFlags.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/ModifierFlags.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/ModifierFlags.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Observables/Popup.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Popup.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Popup.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Popup.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/PinsPosition.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/PinsPosition.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/PinsPosition.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/PinsPosition.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/PopupPosition.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/PopupPosition.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/PopupPosition.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/PopupPosition.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Search.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Search.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Search.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Search.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Search/SearchIndexManager.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/SearchIndexManager.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/SearchIndexManager.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/SearchIndexManager.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/SearchVisibility.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/SearchVisibility.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/SearchVisibility.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/SearchVisibility.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Security/EncryptionManager.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/EncryptionManager.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/EncryptionManager.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/EncryptionManager.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Security/KeychainManager.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/KeychainManager.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/KeychainManager.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/KeychainManager.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Settings/AdvancedSettingsPane.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/AdvancedSettingsPane.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/AdvancedSettingsPane.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/AdvancedSettingsPane.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Settings/AppearanceSettingsPane.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/AppearanceSettingsPane.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/AppearanceSettingsPane.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/AppearanceSettingsPane.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Settings/GeneralSettingsPane.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/GeneralSettingsPane.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/GeneralSettingsPane.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/GeneralSettingsPane.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Settings/IgnoreSettingsPane.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/IgnoreSettingsPane.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/IgnoreSettingsPane.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/IgnoreSettingsPane.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Settings/IgnoreSettingsPane/IgnoreApplicationsSettingsView.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/IgnoreApplicationsSettingsView.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/IgnoreApplicationsSettingsView.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/IgnoreApplicationsSettingsView.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Settings/IgnoreSettingsPane/IgnorePasteboardTypesSettingsView.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/IgnorePasteboardTypesSettingsView.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/IgnorePasteboardTypesSettingsView.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/IgnorePasteboardTypesSettingsView.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Settings/IgnoreSettingsPane/IgnoreRegexpsSettingsView.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/IgnoreRegexpsSettingsView.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/IgnoreRegexpsSettingsView.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/IgnoreRegexpsSettingsView.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Settings/PinsSettingsPane.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/PinsSettingsPane.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/PinsSettingsPane.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/PinsSettingsPane.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Settings/StorageSettingsPane.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/StorageSettingsPane.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/StorageSettingsPane.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/StorageSettingsPane.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Sorter.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Sorter.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Sorter.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Sorter.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Storage.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Storage.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Storage.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Storage.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Throttler.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Throttler.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Throttler.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Throttler.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Views/ConfirmationView.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/ConfirmationView.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/ConfirmationView.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/ConfirmationView.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Views/ContentView.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/ContentView.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Views/FooterItemView.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/FooterItemView.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/FooterItemView.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/FooterItemView.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Views/FooterView.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/FooterView.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/FooterView.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/FooterView.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Views/HeaderView.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/HeaderView.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/HeaderView.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/HeaderView.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Views/HistoryItemView.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/HistoryItemView.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/HistoryItemView.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/HistoryItemView.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Views/HistoryListView.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/HistoryListView.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/HistoryListView.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/HistoryListView.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Views/KeyHandlingView.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/KeyHandlingView.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/KeyHandlingView.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/KeyHandlingView.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Views/KeyboardShortcutView.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/KeyboardShortcutView.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/KeyboardShortcutView.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/KeyboardShortcutView.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Views/ListItemTitleView.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/ListItemTitleView.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/ListItemTitleView.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/ListItemTitleView.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Views/ListItemView.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/ListItemView.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/ListItemView.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/ListItemView.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Views/MouseMovedViewModifer.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/MouseMovedViewModifer.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/MouseMovedViewModifer.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/MouseMovedViewModifer.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Views/PreviewItemView.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/PreviewItemView.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/PreviewItemView.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/PreviewItemView.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Views/SearchFieldView.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/SearchFieldView.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/SearchFieldView.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/SearchFieldView.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Views/VisualEffectView.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/VisualEffectView.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/VisualEffectView.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/VisualEffectView.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Views/WrappingTextView.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/WrappingTextView.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/WrappingTextView.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/WrappingTextView.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/Buffer.build/Release/Buffer.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "" : {
+    "const-values" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Fuse.build/Release/Fuse.build/Objects-normal/arm64/Fuse-primary.swiftconstvalues",
+    "dependencies" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Fuse.build/Release/Fuse.build/Objects-normal/arm64/Fuse-primary.d",
+    "diagnostics" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Fuse.build/Release/Fuse.build/Objects-normal/arm64/Fuse-primary.dia",
+    "emit-module-dependencies" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Fuse.build/Release/Fuse.build/Objects-normal/arm64/Fuse-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Fuse.build/Release/Fuse.build/Objects-normal/arm64/Fuse-primary-emit-module.dia",
+    "pch" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Fuse.build/Release/Fuse.build/Objects-normal/arm64/Fuse-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Fuse.build/Release/Fuse.build/Objects-normal/arm64/Fuse-primary.swiftdeps"
+  },
+  "/Users/moulik.adak/buffer/Buffer/build/SourcePackages/checkouts/fuse-swift/Fuse/Classes/Fuse.swift" : {
+    "index-unit-output-path" : "/Fuse.build/Release/Fuse.build/Objects-normal/arm64/Fuse.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Fuse.build/Release/Fuse.build/Objects-normal/arm64/Fuse.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Fuse.build/Release/Fuse.build/Objects-normal/arm64/Fuse.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/build/SourcePackages/checkouts/fuse-swift/Fuse/Classes/FuseUtilities.swift" : {
+    "index-unit-output-path" : "/Fuse.build/Release/Fuse.build/Objects-normal/arm64/FuseUtilities.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Fuse.build/Release/Fuse.build/Objects-normal/arm64/FuseUtilities.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Fuse.build/Release/Fuse.build/Objects-normal/arm64/FuseUtilities.o"
+  },
+  "/Users/moulik.adak/buffer/Buffer/build/SourcePackages/checkouts/fuse-swift/Fuse/Classes/String+Fuse.swift" : {
+    "index-unit-output-path" : "/Fuse.build/Release/Fuse.build/Objects-normal/arm64/String+Fuse.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Fuse.build/Release/Fuse.build/Objects-normal/arm64/String+Fuse.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Fuse.build/Release/Fuse.build/Objects-normal/arm64/String+Fuse.o"
+  }
+}

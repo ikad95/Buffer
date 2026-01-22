@@ -1,0 +1,1774 @@
+[
+  {
+    "typeName": "Buffer.Select",
+    "mangledTypeName": "6Buffer6SelectV",
+    "kind": "struct",
+    "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Select.swift",
+    "line": 3,
+    "conformances": [
+      "AppIntents.AppIntent",
+      "AppIntents.CustomIntentMigratedAppIntent",
+      "AppIntents.PersistentlyIdentifiable",
+      "AppIntents._SupportsAppDependencies",
+      "Swift.Sendable",
+      "Swift.SendableMetatype"
+    ],
+    "allConformances": [
+      {
+        "protocolName": "AppIntents.AppIntent",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "AppIntents.CustomIntentMigratedAppIntent",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "AppIntents.PersistentlyIdentifiable",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "AppIntents._SupportsAppDependencies",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "Swift.Sendable",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "Swift.SendableMetatype",
+        "conformanceDefiningModule": "Buffer"
+      }
+    ],
+    "associatedTypeAliases": [
+      {
+        "typeAliasName": "PerformResult",
+        "substitutedTypeName": "some AppIntents.ReturnsValue<Swift.String>",
+        "substitutedMangledTypeName": "6Buffer6SelectV7performQryYaKFQOy_Qo_",
+        "opaqueTypeProtocolRequirements": [
+          "AppIntents.ReturnsValue"
+        ],
+        "opaqueTypeSameTypeRequirements": [
+          {
+            "typeAliasName": "AppIntents.IntentResult.Value",
+            "substitutedTypeName": "Swift.String",
+            "substitutedMangledTypeName": "SS"
+          }
+        ]
+      },
+      {
+        "typeAliasName": "SummaryContent",
+        "substitutedTypeName": "some AppIntents.ParameterSummary",
+        "substitutedMangledTypeName": "6Buffer6SelectV16parameterSummaryQrvpZQOy_Qo_",
+        "opaqueTypeProtocolRequirements": [
+          "AppIntents.ParameterSummary"
+        ],
+        "opaqueTypeSameTypeRequirements": []
+      }
+    ],
+    "properties": [
+      {
+        "label": "_number",
+        "type": "AppIntents.IntentParameter<Swift.Int>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "false",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Select.swift",
+        "line": 17,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.IntentParameter<Swift.Int>",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "Number"
+            },
+            {
+              "label": "description",
+              "type": "Swift.Optional<Foundation.LocalizedStringResource>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "default",
+              "type": "Swift.Optional<Swift.Int>",
+              "valueKind": "RawLiteral",
+              "value": "1"
+            },
+            {
+              "label": "controlStyle",
+              "type": "AppIntents.IntentParameter<Swift.Int>.IntControlStyle",
+              "valueKind": "Runtime"
+            },
+            {
+              "label": "inclusiveRange",
+              "type": "Swift.Optional<(lowerBound: Swift.Int, upperBound: Swift.Int)>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "requestValueDialog",
+              "type": "Swift.Optional<AppIntents.IntentDialog>",
+              "valueKind": "RawLiteral",
+              "value": "What is the number of the item?"
+            },
+            {
+              "label": "inputConnectionBehavior",
+              "type": "AppIntents.InputConnectionBehavior",
+              "valueKind": "Runtime"
+            }
+          ]
+        }
+      },
+      {
+        "label": "positionOffset",
+        "type": "Swift.Int",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "false",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Select.swift",
+        "line": 19,
+        "valueKind": "RawLiteral",
+        "value": "1"
+      },
+      {
+        "label": "intentClassName",
+        "type": "Swift.String",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "true",
+        "isComputed": "false",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Select.swift",
+        "line": 4,
+        "valueKind": "RawLiteral",
+        "value": "SelectIntent"
+      },
+      {
+        "label": "title",
+        "type": "Foundation.LocalizedStringResource",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "true",
+        "isComputed": "false",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Select.swift",
+        "line": 6,
+        "valueKind": "RawLiteral",
+        "value": "Select Item in Clipboard History"
+      },
+      {
+        "label": "description",
+        "type": "AppIntents.IntentDescription",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "true",
+        "isComputed": "false",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Select.swift",
+        "line": 7,
+        "valueKind": "RawLiteral",
+        "value": "Selects an item in Buffer clipboard history.\nDepending on Buffer settings, it might trigger pasting of the selected item."
+      },
+      {
+        "label": "parameterSummary",
+        "type": "some AppIntents.ParameterSummary",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "true",
+        "isComputed": "true",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Select.swift",
+        "line": 12,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.IntentParameterSummary<Buffer.Select>",
+          "arguments": [
+            {
+              "label": "",
+              "type": "AppIntents.ParameterSummaryString<Buffer.Select>",
+              "valueKind": "InterpolatedStringLiteral",
+              "value": {
+                "segments": [
+                  {
+                    "valueKind": "RawLiteral",
+                    "value": "Select "
+                  },
+                  {
+                    "valueKind": "KeyPath",
+                    "value": {
+                      "path": "$number",
+                      "rootType": "Buffer.Select",
+                      "components": [
+                        {
+                          "label": "$number",
+                          "type": "AppIntents.IntentParameter<Swift.Int>"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "valueKind": "RawLiteral",
+                    "value": " Item in Clipboard History"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "table",
+              "type": "Swift.Optional<Swift.String>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            }
+          ]
+        }
+      },
+      {
+        "label": "number",
+        "type": "Swift.Int",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Select.swift",
+        "line": 17,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.IntentParameter<Swift.Int>",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "Number"
+            },
+            {
+              "label": "description",
+              "type": "Swift.Optional<Foundation.LocalizedStringResource>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "default",
+              "type": "Swift.Optional<Swift.Int>",
+              "valueKind": "RawLiteral",
+              "value": "1"
+            },
+            {
+              "label": "controlStyle",
+              "type": "AppIntents.IntentParameter<Swift.Int>.IntControlStyle",
+              "valueKind": "Runtime"
+            },
+            {
+              "label": "inclusiveRange",
+              "type": "Swift.Optional<(lowerBound: Swift.Int, upperBound: Swift.Int)>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "requestValueDialog",
+              "type": "Swift.Optional<AppIntents.IntentDialog>",
+              "valueKind": "RawLiteral",
+              "value": "What is the number of the item?"
+            },
+            {
+              "label": "inputConnectionBehavior",
+              "type": "AppIntents.InputConnectionBehavior",
+              "valueKind": "Runtime"
+            }
+          ]
+        },
+        "propertyWrappers": [
+          {
+            "type": "AppIntents.IntentParameter",
+            "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Select.swift",
+            "line": 16,
+            "arguments": [
+              {
+                "label": "title",
+                "type": "Foundation.LocalizedStringResource",
+                "valueKind": "RawLiteral",
+                "value": "Number"
+              },
+              {
+                "label": "default",
+                "type": "Swift.Optional<Swift.Int>",
+                "valueKind": "RawLiteral",
+                "value": "1"
+              },
+              {
+                "label": "requestValueDialog",
+                "type": "Swift.Optional<AppIntents.IntentDialog>",
+                "valueKind": "RawLiteral",
+                "value": "What is the number of the item?"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "$number",
+        "type": "AppIntents.IntentParameter<Swift.Int>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Select.swift",
+        "line": 17,
+        "valueKind": "Runtime"
+      }
+    ]
+  },
+  {
+    "typeName": "Buffer.Get",
+    "mangledTypeName": "6Buffer3GetV",
+    "kind": "struct",
+    "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Get.swift",
+    "line": 4,
+    "conformances": [
+      "AppIntents.AppIntent",
+      "AppIntents.CustomIntentMigratedAppIntent",
+      "AppIntents.PersistentlyIdentifiable",
+      "AppIntents._SupportsAppDependencies",
+      "Swift.Sendable",
+      "Swift.SendableMetatype"
+    ],
+    "allConformances": [
+      {
+        "protocolName": "AppIntents.AppIntent",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "AppIntents.CustomIntentMigratedAppIntent",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "AppIntents.PersistentlyIdentifiable",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "AppIntents._SupportsAppDependencies",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "Swift.Sendable",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "Swift.SendableMetatype",
+        "conformanceDefiningModule": "Buffer"
+      }
+    ],
+    "associatedTypeAliases": [
+      {
+        "typeAliasName": "PerformResult",
+        "substitutedTypeName": "some AppIntents.ReturnsValue<Buffer.HistoryItemAppEntity>",
+        "substitutedMangledTypeName": "6Buffer3GetV7performQryYaKFQOy_Qo_",
+        "opaqueTypeProtocolRequirements": [
+          "AppIntents.ReturnsValue"
+        ],
+        "opaqueTypeSameTypeRequirements": [
+          {
+            "typeAliasName": "AppIntents.IntentResult.Value",
+            "substitutedTypeName": "Buffer.HistoryItemAppEntity",
+            "substitutedMangledTypeName": "6Buffer20HistoryItemAppEntityV"
+          }
+        ]
+      },
+      {
+        "typeAliasName": "SummaryContent",
+        "substitutedTypeName": "some AppIntents.ParameterSummary",
+        "substitutedMangledTypeName": "6Buffer3GetV16parameterSummaryQrvpZQOy_Qo_",
+        "opaqueTypeProtocolRequirements": [
+          "AppIntents.ParameterSummary"
+        ],
+        "opaqueTypeSameTypeRequirements": []
+      }
+    ],
+    "properties": [
+      {
+        "label": "_selected",
+        "type": "AppIntents.IntentParameter<Swift.Bool>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "false",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Get.swift",
+        "line": 14,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.IntentParameter<Swift.Bool>",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "Selected"
+            },
+            {
+              "label": "description",
+              "type": "Swift.Optional<Foundation.LocalizedStringResource>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "default",
+              "type": "Swift.Optional<Swift.Bool>",
+              "valueKind": "RawLiteral",
+              "value": "true"
+            },
+            {
+              "label": "displayName",
+              "type": "Swift.Optional<Swift.Bool.IntentDisplayName>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "requestValueDialog",
+              "type": "Swift.Optional<AppIntents.IntentDialog>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "inputConnectionBehavior",
+              "type": "AppIntents.InputConnectionBehavior",
+              "valueKind": "Runtime"
+            }
+          ]
+        }
+      },
+      {
+        "label": "_number",
+        "type": "AppIntents.IntentParameter<Swift.Int>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "false",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Get.swift",
+        "line": 17,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.IntentParameter<Swift.Int>",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "Number"
+            },
+            {
+              "label": "description",
+              "type": "Swift.Optional<Foundation.LocalizedStringResource>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "default",
+              "type": "Swift.Optional<Swift.Int>",
+              "valueKind": "RawLiteral",
+              "value": "1"
+            },
+            {
+              "label": "controlStyle",
+              "type": "AppIntents.IntentParameter<Swift.Int>.IntControlStyle",
+              "valueKind": "Runtime"
+            },
+            {
+              "label": "inclusiveRange",
+              "type": "Swift.Optional<(lowerBound: Swift.Int, upperBound: Swift.Int)>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "requestValueDialog",
+              "type": "Swift.Optional<AppIntents.IntentDialog>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "inputConnectionBehavior",
+              "type": "AppIntents.InputConnectionBehavior",
+              "valueKind": "Runtime"
+            }
+          ]
+        }
+      },
+      {
+        "label": "positionOffset",
+        "type": "Swift.Int",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "false",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Get.swift",
+        "line": 19,
+        "valueKind": "RawLiteral",
+        "value": "1"
+      },
+      {
+        "label": "intentClassName",
+        "type": "Swift.String",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "true",
+        "isComputed": "false",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Get.swift",
+        "line": 5,
+        "valueKind": "RawLiteral",
+        "value": "GetIntent"
+      },
+      {
+        "label": "title",
+        "type": "Foundation.LocalizedStringResource",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "true",
+        "isComputed": "false",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Get.swift",
+        "line": 7,
+        "valueKind": "RawLiteral",
+        "value": "Get Item from Clipboard History"
+      },
+      {
+        "label": "description",
+        "type": "AppIntents.IntentDescription",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "true",
+        "isComputed": "false",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Get.swift",
+        "line": 8,
+        "valueKind": "RawLiteral",
+        "value": "Gets an item from Buffer clipboard history.\nThe returned item can be used to access its plain/rich/HTML text, image contents or file location."
+      },
+      {
+        "label": "selected",
+        "type": "Swift.Bool",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Get.swift",
+        "line": 14,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.IntentParameter<Swift.Bool>",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "Selected"
+            },
+            {
+              "label": "description",
+              "type": "Swift.Optional<Foundation.LocalizedStringResource>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "default",
+              "type": "Swift.Optional<Swift.Bool>",
+              "valueKind": "RawLiteral",
+              "value": "true"
+            },
+            {
+              "label": "displayName",
+              "type": "Swift.Optional<Swift.Bool.IntentDisplayName>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "requestValueDialog",
+              "type": "Swift.Optional<AppIntents.IntentDialog>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "inputConnectionBehavior",
+              "type": "AppIntents.InputConnectionBehavior",
+              "valueKind": "Runtime"
+            }
+          ]
+        },
+        "propertyWrappers": [
+          {
+            "type": "AppIntents.IntentParameter",
+            "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Get.swift",
+            "line": 13,
+            "arguments": [
+              {
+                "label": "title",
+                "type": "Foundation.LocalizedStringResource",
+                "valueKind": "RawLiteral",
+                "value": "Selected"
+              },
+              {
+                "label": "default",
+                "type": "Swift.Optional<Swift.Bool>",
+                "valueKind": "RawLiteral",
+                "value": "true"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "$selected",
+        "type": "AppIntents.IntentParameter<Swift.Bool>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Get.swift",
+        "line": 14,
+        "valueKind": "Runtime"
+      },
+      {
+        "label": "number",
+        "type": "Swift.Int",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Get.swift",
+        "line": 17,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.IntentParameter<Swift.Int>",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "Number"
+            },
+            {
+              "label": "description",
+              "type": "Swift.Optional<Foundation.LocalizedStringResource>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "default",
+              "type": "Swift.Optional<Swift.Int>",
+              "valueKind": "RawLiteral",
+              "value": "1"
+            },
+            {
+              "label": "controlStyle",
+              "type": "AppIntents.IntentParameter<Swift.Int>.IntControlStyle",
+              "valueKind": "Runtime"
+            },
+            {
+              "label": "inclusiveRange",
+              "type": "Swift.Optional<(lowerBound: Swift.Int, upperBound: Swift.Int)>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "requestValueDialog",
+              "type": "Swift.Optional<AppIntents.IntentDialog>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "inputConnectionBehavior",
+              "type": "AppIntents.InputConnectionBehavior",
+              "valueKind": "Runtime"
+            }
+          ]
+        },
+        "propertyWrappers": [
+          {
+            "type": "AppIntents.IntentParameter",
+            "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Get.swift",
+            "line": 16,
+            "arguments": [
+              {
+                "label": "title",
+                "type": "Foundation.LocalizedStringResource",
+                "valueKind": "RawLiteral",
+                "value": "Number"
+              },
+              {
+                "label": "default",
+                "type": "Swift.Optional<Swift.Int>",
+                "valueKind": "RawLiteral",
+                "value": "1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "$number",
+        "type": "AppIntents.IntentParameter<Swift.Int>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Get.swift",
+        "line": 17,
+        "valueKind": "Runtime"
+      },
+      {
+        "label": "parameterSummary",
+        "type": "some AppIntents.ParameterSummary",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "true",
+        "isComputed": "true",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Get.swift",
+        "line": 21,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.ParameterSummaryWhenCondition<Buffer.Get, AppIntents.IntentParameterSummary<Buffer.Get>, AppIntents.IntentParameterSummary<Buffer.Get>>",
+          "arguments": [
+            {
+              "label": "",
+              "type": "Swift.KeyPath<Buffer.Get, AppIntents.IntentParameter<Swift.Bool>>",
+              "valueKind": "KeyPath",
+              "value": {
+                "path": "$selected",
+                "rootType": "Buffer.Get",
+                "components": [
+                  {
+                    "label": "$selected",
+                    "type": "AppIntents.IntentParameter<Swift.Bool>"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "",
+              "type": "AppIntents.EquatableComparisonOperator",
+              "valueKind": "Enum",
+              "value": {
+                "name": "equalTo"
+              }
+            },
+            {
+              "label": "",
+              "type": "Swift.Bool",
+              "valueKind": "RawLiteral",
+              "value": "false"
+            },
+            {
+              "label": "",
+              "type": "() -> AppIntents.IntentParameterSummary<Buffer.Get>",
+              "valueKind": "Builder",
+              "value": {
+                "type": "",
+                "members": [
+                  {
+                    "kind": "buildExpression",
+                    "element": {
+                      "valueKind": "InitCall",
+                      "value": {
+                        "type": "AppIntents.IntentParameterSummary<Buffer.Get>",
+                        "arguments": [
+                          {
+                            "label": "",
+                            "type": "() -> Swift.Array<Swift.PartialKeyPath<Buffer.Get>>",
+                            "valueKind": "Builder",
+                            "value": {
+                              "type": "",
+                              "members": [
+                                {
+                                  "kind": "buildExpression",
+                                  "element": {
+                                    "valueKind": "KeyPath",
+                                    "value": {
+                                      "path": "$number",
+                                      "rootType": "Buffer.Get",
+                                      "components": [
+                                        {
+                                          "label": "$number",
+                                          "type": "AppIntents.IntentParameter<Swift.Int>"
+                                        }
+                                      ]
+                                    }
+                                  }
+                                },
+                                {
+                                  "kind": "buildExpression",
+                                  "element": {
+                                    "valueKind": "KeyPath",
+                                    "value": {
+                                      "path": "$selected",
+                                      "rootType": "Buffer.Get",
+                                      "components": [
+                                        {
+                                          "label": "$selected",
+                                          "type": "AppIntents.IntentParameter<Swift.Bool>"
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "label": "otherwise",
+              "type": "() -> AppIntents.IntentParameterSummary<Buffer.Get>",
+              "valueKind": "Builder",
+              "value": {
+                "type": "",
+                "members": [
+                  {
+                    "kind": "buildExpression",
+                    "element": {
+                      "valueKind": "InitCall",
+                      "value": {
+                        "type": "AppIntents.IntentParameterSummary<Buffer.Get>",
+                        "arguments": [
+                          {
+                            "label": "",
+                            "type": "() -> Swift.Array<Swift.PartialKeyPath<Buffer.Get>>",
+                            "valueKind": "Builder",
+                            "value": {
+                              "type": "",
+                              "members": [
+                                {
+                                  "kind": "buildExpression",
+                                  "element": {
+                                    "valueKind": "KeyPath",
+                                    "value": {
+                                      "path": "$selected",
+                                      "rootType": "Buffer.Get",
+                                      "components": [
+                                        {
+                                          "label": "$selected",
+                                          "type": "AppIntents.IntentParameter<Swift.Bool>"
+                                        }
+                                      ]
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "typeName": "Buffer.Clear",
+    "mangledTypeName": "6Buffer5ClearV",
+    "kind": "struct",
+    "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Clear.swift",
+    "line": 4,
+    "conformances": [
+      "AppIntents.AppIntent",
+      "AppIntents.CustomIntentMigratedAppIntent",
+      "AppIntents.PersistentlyIdentifiable",
+      "AppIntents._SupportsAppDependencies",
+      "Swift.Sendable",
+      "Swift.SendableMetatype",
+      "Swift.BitwiseCopyable"
+    ],
+    "allConformances": [
+      {
+        "protocolName": "AppIntents.AppIntent",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "AppIntents.CustomIntentMigratedAppIntent",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "AppIntents.PersistentlyIdentifiable",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "AppIntents._SupportsAppDependencies",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "Swift.Sendable",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "Swift.SendableMetatype",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "Swift.BitwiseCopyable",
+        "conformanceDefiningModule": "Buffer"
+      }
+    ],
+    "associatedTypeAliases": [
+      {
+        "typeAliasName": "PerformResult",
+        "substitutedTypeName": "some AppIntents.IntentResult",
+        "substitutedMangledTypeName": "6Buffer5ClearV7performQryYaKFQOy_Qo_",
+        "opaqueTypeProtocolRequirements": [
+          "AppIntents.IntentResult"
+        ],
+        "opaqueTypeSameTypeRequirements": []
+      },
+      {
+        "typeAliasName": "SummaryContent",
+        "substitutedTypeName": "some AppIntents.ParameterSummary",
+        "substitutedMangledTypeName": "6Buffer5ClearV16parameterSummaryQrvpZQOy_Qo_",
+        "opaqueTypeProtocolRequirements": [
+          "AppIntents.ParameterSummary"
+        ],
+        "opaqueTypeSameTypeRequirements": []
+      }
+    ],
+    "properties": [
+      {
+        "label": "intentClassName",
+        "type": "Swift.String",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "true",
+        "isComputed": "false",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Clear.swift",
+        "line": 5,
+        "valueKind": "RawLiteral",
+        "value": "ClearIntent"
+      },
+      {
+        "label": "title",
+        "type": "Foundation.LocalizedStringResource",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "true",
+        "isComputed": "false",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Clear.swift",
+        "line": 7,
+        "valueKind": "RawLiteral",
+        "value": "Clear Clipboard History"
+      },
+      {
+        "label": "description",
+        "type": "AppIntents.IntentDescription",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "true",
+        "isComputed": "false",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Clear.swift",
+        "line": 8,
+        "valueKind": "RawLiteral",
+        "value": "Clears all Buffer clipboard history except for pinned items."
+      },
+      {
+        "label": "parameterSummary",
+        "type": "some AppIntents.ParameterSummary",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "true",
+        "isComputed": "true",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Clear.swift",
+        "line": 10,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.IntentParameterSummary<Buffer.Clear>",
+          "arguments": [
+            {
+              "label": "",
+              "type": "AppIntents.ParameterSummaryString<Buffer.Clear>",
+              "valueKind": "RawLiteral",
+              "value": "Clear Clipboard History"
+            },
+            {
+              "label": "table",
+              "type": "Swift.Optional<Swift.String>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "typeName": "Buffer.Delete",
+    "mangledTypeName": "6Buffer6DeleteV",
+    "kind": "struct",
+    "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Delete.swift",
+    "line": 3,
+    "conformances": [
+      "AppIntents.AppIntent",
+      "AppIntents.CustomIntentMigratedAppIntent",
+      "AppIntents.PersistentlyIdentifiable",
+      "AppIntents._SupportsAppDependencies",
+      "Swift.Sendable",
+      "Swift.SendableMetatype"
+    ],
+    "allConformances": [
+      {
+        "protocolName": "AppIntents.AppIntent",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "AppIntents.CustomIntentMigratedAppIntent",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "AppIntents.PersistentlyIdentifiable",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "AppIntents._SupportsAppDependencies",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "Swift.Sendable",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "Swift.SendableMetatype",
+        "conformanceDefiningModule": "Buffer"
+      }
+    ],
+    "associatedTypeAliases": [
+      {
+        "typeAliasName": "PerformResult",
+        "substitutedTypeName": "some AppIntents.IntentResult",
+        "substitutedMangledTypeName": "6Buffer6DeleteV7performQryYaKFQOy_Qo_",
+        "opaqueTypeProtocolRequirements": [
+          "AppIntents.IntentResult"
+        ],
+        "opaqueTypeSameTypeRequirements": []
+      },
+      {
+        "typeAliasName": "SummaryContent",
+        "substitutedTypeName": "some AppIntents.ParameterSummary",
+        "substitutedMangledTypeName": "6Buffer6DeleteV16parameterSummaryQrvpZQOy_Qo_",
+        "opaqueTypeProtocolRequirements": [
+          "AppIntents.ParameterSummary"
+        ],
+        "opaqueTypeSameTypeRequirements": []
+      }
+    ],
+    "properties": [
+      {
+        "label": "_number",
+        "type": "AppIntents.IntentParameter<Swift.Int>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "false",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Delete.swift",
+        "line": 10,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.IntentParameter<Swift.Int>",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "Number"
+            },
+            {
+              "label": "description",
+              "type": "Swift.Optional<Foundation.LocalizedStringResource>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "default",
+              "type": "Swift.Optional<Swift.Int>",
+              "valueKind": "RawLiteral",
+              "value": "1"
+            },
+            {
+              "label": "controlStyle",
+              "type": "AppIntents.IntentParameter<Swift.Int>.IntControlStyle",
+              "valueKind": "Runtime"
+            },
+            {
+              "label": "inclusiveRange",
+              "type": "Swift.Optional<(lowerBound: Swift.Int, upperBound: Swift.Int)>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "requestValueDialog",
+              "type": "Swift.Optional<AppIntents.IntentDialog>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "inputConnectionBehavior",
+              "type": "AppIntents.InputConnectionBehavior",
+              "valueKind": "Runtime"
+            }
+          ]
+        }
+      },
+      {
+        "label": "positionOffset",
+        "type": "Swift.Int",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "false",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Delete.swift",
+        "line": 16,
+        "valueKind": "RawLiteral",
+        "value": "1"
+      },
+      {
+        "label": "intentClassName",
+        "type": "Swift.String",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "true",
+        "isComputed": "false",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Delete.swift",
+        "line": 4,
+        "valueKind": "RawLiteral",
+        "value": "DeleteIntent"
+      },
+      {
+        "label": "title",
+        "type": "Foundation.LocalizedStringResource",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "true",
+        "isComputed": "false",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Delete.swift",
+        "line": 6,
+        "valueKind": "RawLiteral",
+        "value": "Delete Item from Clipboard History"
+      },
+      {
+        "label": "description",
+        "type": "AppIntents.IntentDescription",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "true",
+        "isComputed": "false",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Delete.swift",
+        "line": 7,
+        "valueKind": "RawLiteral",
+        "value": "Deletes an item from Buffer clipboard history."
+      },
+      {
+        "label": "number",
+        "type": "Swift.Int",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Delete.swift",
+        "line": 10,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.IntentParameter<Swift.Int>",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "Number"
+            },
+            {
+              "label": "description",
+              "type": "Swift.Optional<Foundation.LocalizedStringResource>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "default",
+              "type": "Swift.Optional<Swift.Int>",
+              "valueKind": "RawLiteral",
+              "value": "1"
+            },
+            {
+              "label": "controlStyle",
+              "type": "AppIntents.IntentParameter<Swift.Int>.IntControlStyle",
+              "valueKind": "Runtime"
+            },
+            {
+              "label": "inclusiveRange",
+              "type": "Swift.Optional<(lowerBound: Swift.Int, upperBound: Swift.Int)>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "requestValueDialog",
+              "type": "Swift.Optional<AppIntents.IntentDialog>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "inputConnectionBehavior",
+              "type": "AppIntents.InputConnectionBehavior",
+              "valueKind": "Runtime"
+            }
+          ]
+        },
+        "propertyWrappers": [
+          {
+            "type": "AppIntents.IntentParameter",
+            "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Delete.swift",
+            "line": 9,
+            "arguments": [
+              {
+                "label": "title",
+                "type": "Foundation.LocalizedStringResource",
+                "valueKind": "RawLiteral",
+                "value": "Number"
+              },
+              {
+                "label": "default",
+                "type": "Swift.Optional<Swift.Int>",
+                "valueKind": "RawLiteral",
+                "value": "1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "$number",
+        "type": "AppIntents.IntentParameter<Swift.Int>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Delete.swift",
+        "line": 10,
+        "valueKind": "Runtime"
+      },
+      {
+        "label": "parameterSummary",
+        "type": "some AppIntents.ParameterSummary",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "true",
+        "isComputed": "true",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/Delete.swift",
+        "line": 12,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.IntentParameterSummary<Buffer.Delete>",
+          "arguments": [
+            {
+              "label": "",
+              "type": "AppIntents.ParameterSummaryString<Buffer.Delete>",
+              "valueKind": "InterpolatedStringLiteral",
+              "value": {
+                "segments": [
+                  {
+                    "valueKind": "RawLiteral",
+                    "value": "Delete "
+                  },
+                  {
+                    "valueKind": "KeyPath",
+                    "value": {
+                      "path": "$number",
+                      "rootType": "Buffer.Delete",
+                      "components": [
+                        {
+                          "label": "$number",
+                          "type": "AppIntents.IntentParameter<Swift.Int>"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "valueKind": "RawLiteral",
+                    "value": " Item from Clipboard History"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "table",
+              "type": "Swift.Optional<Swift.String>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "typeName": "Buffer.HistoryItemAppEntity",
+    "mangledTypeName": "6Buffer20HistoryItemAppEntityV",
+    "kind": "struct",
+    "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/HistoryItemAppEntity.swift",
+    "line": 3,
+    "conformances": [
+      "AppIntents.TransientAppEntity",
+      "AppIntents.AppEntity",
+      "AppIntents.AppValue",
+      "AppIntents.DisplayRepresentable",
+      "Swift.Identifiable",
+      "AppIntents.PersistentlyIdentifiable",
+      "AppIntents.TypeDisplayRepresentable",
+      "AppIntents._IntentValue",
+      "Swift.Sendable",
+      "AppIntents.InstanceDisplayRepresentable",
+      "Swift.SendableMetatype",
+      "Foundation.CustomLocalizedStringResourceConvertible"
+    ],
+    "allConformances": [
+      {
+        "protocolName": "AppIntents.TransientAppEntity",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "AppIntents.AppEntity",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "AppIntents.AppValue",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "AppIntents.DisplayRepresentable",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "Swift.Identifiable",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "AppIntents.PersistentlyIdentifiable",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "AppIntents.TypeDisplayRepresentable",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "AppIntents._IntentValue",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "Swift.Sendable",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "AppIntents.InstanceDisplayRepresentable",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "Swift.SendableMetatype",
+        "conformanceDefiningModule": "Buffer"
+      },
+      {
+        "protocolName": "Foundation.CustomLocalizedStringResourceConvertible",
+        "conformanceDefiningModule": "Buffer"
+      }
+    ],
+    "associatedTypeAliases": [
+      {
+        "typeAliasName": "DefaultQuery",
+        "substitutedTypeName": "AppIntents._TransientAppEntityQuery<Buffer.HistoryItemAppEntity>",
+        "substitutedMangledTypeName": "10AppIntents010_TransientA11EntityQueryVy6Buffer011HistoryItemaD0VG"
+      },
+      {
+        "typeAliasName": "ID",
+        "substitutedTypeName": "Foundation.UUID",
+        "substitutedMangledTypeName": "10Foundation4UUIDV"
+      },
+      {
+        "typeAliasName": "ValueType",
+        "substitutedTypeName": "Buffer.HistoryItemAppEntity",
+        "substitutedMangledTypeName": "6Buffer20HistoryItemAppEntityV"
+      },
+      {
+        "typeAliasName": "UnwrappedType",
+        "substitutedTypeName": "Buffer.HistoryItemAppEntity",
+        "substitutedMangledTypeName": "6Buffer20HistoryItemAppEntityV"
+      },
+      {
+        "typeAliasName": "Specification",
+        "substitutedTypeName": "AppIntents.EmptyResolverSpecification<Buffer.HistoryItemAppEntity>",
+        "substitutedMangledTypeName": "10AppIntents26EmptyResolverSpecificationVy6Buffer011HistoryItemA6EntityVG"
+      }
+    ],
+    "properties": [
+      {
+        "label": "_file",
+        "type": "AppIntents.EntityProperty<Swift.Optional<Foundation.URL>>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "false",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/HistoryItemAppEntity.swift",
+        "line": 7,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.EntityProperty<Swift.Optional<Foundation.URL>>",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "File"
+            }
+          ]
+        }
+      },
+      {
+        "label": "_html",
+        "type": "AppIntents.EntityProperty<Swift.Optional<Swift.String>>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "false",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/HistoryItemAppEntity.swift",
+        "line": 10,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.EntityProperty<Swift.Optional<Swift.String>>",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "HTML"
+            }
+          ]
+        }
+      },
+      {
+        "label": "_image",
+        "type": "AppIntents.EntityProperty<Swift.Optional<Foundation.URL>>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "false",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/HistoryItemAppEntity.swift",
+        "line": 13,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.EntityProperty<Swift.Optional<Foundation.URL>>",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "Image"
+            }
+          ]
+        }
+      },
+      {
+        "label": "_richText",
+        "type": "AppIntents.EntityProperty<Swift.Optional<Swift.String>>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "false",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/HistoryItemAppEntity.swift",
+        "line": 16,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.EntityProperty<Swift.Optional<Swift.String>>",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "Rich Text"
+            }
+          ]
+        }
+      },
+      {
+        "label": "_text",
+        "type": "AppIntents.EntityProperty<Swift.Optional<Swift.String>>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "false",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/HistoryItemAppEntity.swift",
+        "line": 19,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.EntityProperty<Swift.Optional<Swift.String>>",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "Text"
+            }
+          ]
+        }
+      },
+      {
+        "label": "typeDisplayRepresentation",
+        "type": "AppIntents.TypeDisplayRepresentation",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "true",
+        "isComputed": "false",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/HistoryItemAppEntity.swift",
+        "line": 4,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.TypeDisplayRepresentation",
+          "arguments": [
+            {
+              "label": "name",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "Clipboard item"
+            },
+            {
+              "label": "numericFormat",
+              "type": "Swift.Optional<Foundation.LocalizedStringResource>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            }
+          ]
+        }
+      },
+      {
+        "label": "file",
+        "type": "Swift.Optional<Foundation.URL>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/HistoryItemAppEntity.swift",
+        "line": 7,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.EntityProperty<Swift.Optional<Foundation.URL>>",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "File"
+            }
+          ]
+        },
+        "propertyWrappers": [
+          {
+            "type": "AppIntents.EntityProperty",
+            "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/HistoryItemAppEntity.swift",
+            "line": 6,
+            "arguments": [
+              {
+                "label": "title",
+                "type": "Foundation.LocalizedStringResource",
+                "valueKind": "RawLiteral",
+                "value": "File"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "$file",
+        "type": "AppIntents.EntityProperty<Swift.Optional<Foundation.URL>>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/HistoryItemAppEntity.swift",
+        "line": 7,
+        "valueKind": "Runtime"
+      },
+      {
+        "label": "html",
+        "type": "Swift.Optional<Swift.String>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/HistoryItemAppEntity.swift",
+        "line": 10,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.EntityProperty<Swift.Optional<Swift.String>>",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "HTML"
+            }
+          ]
+        },
+        "propertyWrappers": [
+          {
+            "type": "AppIntents.EntityProperty",
+            "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/HistoryItemAppEntity.swift",
+            "line": 9,
+            "arguments": [
+              {
+                "label": "title",
+                "type": "Foundation.LocalizedStringResource",
+                "valueKind": "RawLiteral",
+                "value": "HTML"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "$html",
+        "type": "AppIntents.EntityProperty<Swift.Optional<Swift.String>>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/HistoryItemAppEntity.swift",
+        "line": 10,
+        "valueKind": "Runtime"
+      },
+      {
+        "label": "image",
+        "type": "Swift.Optional<Foundation.URL>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/HistoryItemAppEntity.swift",
+        "line": 13,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.EntityProperty<Swift.Optional<Foundation.URL>>",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "Image"
+            }
+          ]
+        },
+        "propertyWrappers": [
+          {
+            "type": "AppIntents.EntityProperty",
+            "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/HistoryItemAppEntity.swift",
+            "line": 12,
+            "arguments": [
+              {
+                "label": "title",
+                "type": "Foundation.LocalizedStringResource",
+                "valueKind": "RawLiteral",
+                "value": "Image"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "$image",
+        "type": "AppIntents.EntityProperty<Swift.Optional<Foundation.URL>>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/HistoryItemAppEntity.swift",
+        "line": 13,
+        "valueKind": "Runtime"
+      },
+      {
+        "label": "richText",
+        "type": "Swift.Optional<Swift.String>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/HistoryItemAppEntity.swift",
+        "line": 16,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.EntityProperty<Swift.Optional<Swift.String>>",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "Rich Text"
+            }
+          ]
+        },
+        "propertyWrappers": [
+          {
+            "type": "AppIntents.EntityProperty",
+            "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/HistoryItemAppEntity.swift",
+            "line": 15,
+            "arguments": [
+              {
+                "label": "title",
+                "type": "Foundation.LocalizedStringResource",
+                "valueKind": "RawLiteral",
+                "value": "Rich Text"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "$richText",
+        "type": "AppIntents.EntityProperty<Swift.Optional<Swift.String>>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/HistoryItemAppEntity.swift",
+        "line": 16,
+        "valueKind": "Runtime"
+      },
+      {
+        "label": "text",
+        "type": "Swift.Optional<Swift.String>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/HistoryItemAppEntity.swift",
+        "line": 19,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.EntityProperty<Swift.Optional<Swift.String>>",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "Text"
+            }
+          ]
+        },
+        "propertyWrappers": [
+          {
+            "type": "AppIntents.EntityProperty",
+            "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/HistoryItemAppEntity.swift",
+            "line": 18,
+            "arguments": [
+              {
+                "label": "title",
+                "type": "Foundation.LocalizedStringResource",
+                "valueKind": "RawLiteral",
+                "value": "Text"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "label": "$text",
+        "type": "AppIntents.EntityProperty<Swift.Optional<Swift.String>>",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/HistoryItemAppEntity.swift",
+        "line": 19,
+        "valueKind": "Runtime"
+      },
+      {
+        "label": "displayRepresentation",
+        "type": "AppIntents.DisplayRepresentation",
+        "mangledTypeName": "n/a - deprecated",
+        "isStatic": "false",
+        "isComputed": "true",
+        "file": "/Users/moulik.adak/buffer/Buffer/Buffer/Intents/HistoryItemAppEntity.swift",
+        "line": 21,
+        "valueKind": "InitCall",
+        "value": {
+          "type": "AppIntents.DisplayRepresentation",
+          "arguments": [
+            {
+              "label": "title",
+              "type": "Foundation.LocalizedStringResource",
+              "valueKind": "RawLiteral",
+              "value": "Clipboard item"
+            },
+            {
+              "label": "subtitle",
+              "type": "Swift.Optional<Foundation.LocalizedStringResource>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            },
+            {
+              "label": "image",
+              "type": "Swift.Optional<AppIntents.DisplayRepresentation.Image>",
+              "valueKind": "RawLiteral",
+              "value": "nil"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "/Users/moulik.adak/buffer/Buffer/Buffer/Extensions/Collection+Surrounding.swift" : {
+    "abi-baseline-json" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Buffer.abi.json",
+    "const-values" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Buffer-primary.swiftconstvalues",
+    "dependencies" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Buffer-primary.d",
+    "diagnostics" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Buffer-primary.dia",
+    "objc-header" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Buffer-Swift.h",
+    "swiftdoc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Buffer.swiftdoc",
+    "swiftmodule" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Buffer.swiftmodule",
+    "swiftsourceinfo" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/Buffer.build/Release/Buffer.build/Objects-normal/arm64/Buffer.swiftsourceinfo"
+  }
+}

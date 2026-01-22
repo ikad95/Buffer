@@ -1,0 +1,16 @@
+{
+  "" : {
+    "const-values" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/SwiftHEXColors.build/Release/SwiftHEXColors.build/Objects-normal/arm64/SwiftHEXColors-primary.swiftconstvalues",
+    "dependencies" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/SwiftHEXColors.build/Release/SwiftHEXColors.build/Objects-normal/arm64/SwiftHEXColors-primary.d",
+    "diagnostics" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/SwiftHEXColors.build/Release/SwiftHEXColors.build/Objects-normal/arm64/SwiftHEXColors-primary.dia",
+    "emit-module-dependencies" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/SwiftHEXColors.build/Release/SwiftHEXColors.build/Objects-normal/arm64/SwiftHEXColors-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/SwiftHEXColors.build/Release/SwiftHEXColors.build/Objects-normal/arm64/SwiftHEXColors-primary-emit-module.dia",
+    "pch" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/SwiftHEXColors.build/Release/SwiftHEXColors.build/Objects-normal/arm64/SwiftHEXColors-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/SwiftHEXColors.build/Release/SwiftHEXColors.build/Objects-normal/arm64/SwiftHEXColors-primary.swiftdeps"
+  },
+  "/Users/moulik.adak/buffer/Buffer/build/SourcePackages/checkouts/SwiftHEXColors/Sources/SwiftHEXColors/SwiftHEXColors.swift" : {
+    "index-unit-output-path" : "/SwiftHEXColors.build/Release/SwiftHEXColors.build/Objects-normal/arm64/SwiftHEXColors.o",
+    "llvm-bc" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/SwiftHEXColors.build/Release/SwiftHEXColors.build/Objects-normal/arm64/SwiftHEXColors.bc",
+    "object" : "/Users/moulik.adak/buffer/Buffer/build/Build/Intermediates.noindex/SwiftHEXColors.build/Release/SwiftHEXColors.build/Objects-normal/arm64/SwiftHEXColors.o"
+  }
+}
