@@ -30,6 +30,16 @@ class Clipboard {
     .transient
   ]
 
+  // Binary file extensions to ignore
+  private let ignoredFileExtensions: Set<String> = [
+    "app", "dmg", "pkg", "exe", "bin", "dylib", "so", "a", "o",
+    "framework", "bundle", "kext", "plugin", "xpc", "appex",
+    "zip", "tar", "gz", "rar", "7z", "iso", "bz2", "xz",
+    "doc", "docx", "xls", "xlsx", "ppt", "pptx", "pdf",
+    "class", "jar", "war", "pyc", "pyo", "whl",
+    "node_modules", "git", "svn"
+  ]
+
   private var enabledTypes: Set<NSPasteboard.PasteboardType> { Defaults[.enabledPasteboardTypes] }
   private var disabledTypes: Set<NSPasteboard.PasteboardType> { supportedTypes.subtracting(enabledTypes) }
 
@@ -189,6 +199,11 @@ class Clipboard {
         return
       }
 
+      // Ignore binary files (apps, archives, etc.)
+      if types.contains(.fileURL) && shouldIgnoreFileURL(item) {
+        return
+      }
+
       types = types
         .subtracting(disabledTypes)
         .filter { !$0.rawValue.starts(with: dynamicTypePrefix) }
@@ -252,6 +267,30 @@ class Clipboard {
         }
       }
     }
+    return false
+  }
+
+  private func shouldIgnoreFileURL(_ item: NSPasteboardItem) -> Bool {
+    guard let urlData = item.data(forType: .fileURL),
+          let url = URL(dataRepresentation: urlData, relativeTo: nil, isAbsolute: true) else {
+      return false
+    }
+
+    let ext = url.pathExtension.lowercased()
+
+    // Ignore binary file extensions
+    if ignoredFileExtensions.contains(ext) {
+      return true
+    }
+
+    // Ignore directories (like .app bundles)
+    var isDirectory: ObjCBool = false
+    if FileManager.default.fileExists(atPath: url.path, isDirectory: &isDirectory) {
+      if isDirectory.boolValue {
+        return true
+      }
+    }
+
     return false
   }
 

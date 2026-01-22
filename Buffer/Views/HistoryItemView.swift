@@ -21,14 +21,9 @@ struct HistoryItemView: View {
     .onAppear {
       item.ensureThumbnailImage()
     }
-    .contentShape(Rectangle())
-    .simultaneousGesture(
-      TapGesture()
-        .onEnded { _ in
-          appState.isKeyboardNavigating = false
-          appState.history.select(item)
-        }
-    )
+    .onTapGesture {
+      appState.history.select(item)
+    }
     .popover(isPresented: $item.showPreview, arrowEdge: .trailing) {
       PreviewItemView(item: item)
         .onAppear {
