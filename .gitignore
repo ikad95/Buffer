@@ -3,3 +3,9 @@ Maccy.xcodeproj/project.xcworkspace/xcshareddata
 .idea
 .DS_Store
 Maccy/.DS_Store
+build/
+DerivedData/
+*.ipa
+*.dSYM.zip
+*.dSYM
+.swiftpm/
