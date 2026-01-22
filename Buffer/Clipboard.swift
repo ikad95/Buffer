@@ -83,8 +83,7 @@ class Clipboard {
 
     for content in contents {
       guard content.type != NSPasteboard.PasteboardType.fileURL.rawValue else { continue }
-      guard let value = content.value else { continue }
-      pasteboard.setData(value, forType: NSPasteboard.PasteboardType(content.type))
+      pasteboard.setData(content.value, forType: NSPasteboard.PasteboardType(content.type))
     }
 
     // Use writeObjects for file URLs so that multiple files that are copied actually work.
