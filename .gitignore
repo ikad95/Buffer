@@ -1,8 +1,8 @@
 xcuserdata/
-Maccy.xcodeproj/project.xcworkspace/xcshareddata
+Buffer.xcodeproj/project.xcworkspace/xcshareddata
 .idea
 .DS_Store
-Maccy/.DS_Store
+Buffer/.DS_Store
 build/
 DerivedData/
 *.ipa

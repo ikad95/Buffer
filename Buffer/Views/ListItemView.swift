@@ -13,6 +13,7 @@ struct ListItemView<Title: View>: View {
   @ViewBuilder var title: () -> Title
 
   @Default(.showApplicationIcons) private var showIcons
+  @Default(.theme) private var theme
   @Environment(AppState.self) private var appState
   @Environment(ModifierFlags.self) private var modifierFlags
 
@@ -68,10 +69,10 @@ struct ListItemView<Title: View>: View {
     .frame(minHeight: Popup.itemHeight)
     .id(id)
     .frame(maxWidth: .infinity, alignment: .leading)
-    .foregroundStyle(isSelected ? Color.white : .primary)
+    .foregroundStyle(isSelected ? theme.selectionTextColor : .primary)
     // macOS 26 broke hovering if no background is present.
     // The slight opcaity white background is a workaround
-    .background(isSelected ? Color.accentColor.opacity(0.8) : .white.opacity(0.001))
+    .background(isSelected ? theme.selectionColor.opacity(0.8) : .white.opacity(0.001))
     .clipShape(.rect(cornerRadius: Popup.cornerRadius))
     .onHover { hovering in
       if hovering {

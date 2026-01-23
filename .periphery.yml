@@ -1,6 +1,6 @@
-project: Maccy.xcodeproj
+project: Buffer.xcodeproj
 retain_objc_accessible: true
 schemes:
-- Maccy
+- Buffer
 targets:
-- Maccy
+- Buffer

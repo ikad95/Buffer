@@ -17,6 +17,7 @@ struct AppearanceSettingsPane: View {
   @Default(.showFooter) private var showFooter
   @Default(.windowPosition) private var windowPosition
   @Default(.showApplicationIcons) private var showApplicationIcons
+  @Default(.theme) private var theme
 
   @State private var screens = NSScreen.screens
 
@@ -110,10 +111,7 @@ struct AppearanceSettingsPane: View {
         }
       }
 
-      Settings.Section(
-        bottomDivider: true,
-        label: { Text("HighlightMatches", tableName: "AppearanceSettings") }
-      ) {
+      Settings.Section(label: { Text("HighlightMatches", tableName: "AppearanceSettings") }) {
         Picker("", selection: $highlightMatch) {
           ForEach(HighlightMatch.allCases) { match in
             Text(match.description)
@@ -122,6 +120,26 @@ struct AppearanceSettingsPane: View {
         .labelsHidden()
         .frame(width: 141, alignment: .leading)
         .help(Text("HighlightMatchesTooltip", tableName: "AppearanceSettings"))
+      }
+
+      Settings.Section(
+        bottomDivider: true,
+        label: { Text("Theme", tableName: "AppearanceSettings") }
+      ) {
+        Picker("", selection: $theme) {
+          ForEach(Theme.allCases) { themeOption in
+            HStack {
+              Circle()
+                .fill(themeOption.selectionColor)
+                .frame(width: 12, height: 12)
+              Text(themeOption.description)
+            }
+            .tag(themeOption)
+          }
+        }
+        .labelsHidden()
+        .frame(width: 141, alignment: .leading)
+        .help(Text("ThemeTooltip", tableName: "AppearanceSettings"))
       }
 
       Settings.Section(title: "") {

@@ -1,15 +1,17 @@
+import Defaults
 import SwiftUI
 
 struct SearchFieldView: View {
   var placeholder: LocalizedStringKey
   @Binding var query: String
 
+  @Default(.theme) private var theme
   @Environment(AppState.self) private var appState
 
   var body: some View {
     ZStack {
       RoundedRectangle(cornerRadius: Popup.cornerRadius, style: .continuous)
-        .fill(Color.secondary)
+        .fill(theme.searchFieldTint)
         .opacity(0.1)
         .frame(height: 23)
 

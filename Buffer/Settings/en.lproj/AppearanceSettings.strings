@@ -33,3 +33,11 @@
 "ShowApplicationIcons" = "Show application icons";
 "ShowFooter" = "Show footer";
 "OpenPreferencesWarning" = "⚠️ Press ⌘, (command+comma) to open preferences when footer is hidden.";
+"Theme" = "Theme:";
+"ThemeTooltip" = "Change the color theme for selection highlighting.\nDefault: Default (uses system accent color).";
+"ThemeDefault" = "Default";
+"ThemeMonokai" = "Monokai";
+"ThemeDracula" = "Dracula";
+"ThemeOneDark" = "One Dark";
+"ThemeNord" = "Nord";
+"ThemeSolarized" = "Solarized";
