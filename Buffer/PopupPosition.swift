@@ -67,32 +67,20 @@ enum PopupPosition: String, CaseIterable, Identifiable, CustomStringConvertible,
     return positionAtCursor(cursorPosition: cursorPosition, size: size, screen: screen)
   }
 
-  /// Position popup near cursor, intelligently adjusting to stay within screen bounds
+  /// Position popup near cursor with top-left corner at cursor position
   private func positionAtCursor(cursorPosition: NSPoint, size: NSSize, screen: NSScreen?) -> NSPoint {
     guard let visibleFrame = screen?.visibleFrame else {
-      // Fallback: just position below cursor
+      // Fallback: top-left corner at cursor
       return NSPoint(x: cursorPosition.x, y: cursorPosition.y - size.height)
     }
 
     var point = cursorPosition
 
-    // Determine vertical positioning: prefer below cursor, but flip above if needed
-    let spaceBelow = cursorPosition.y - visibleFrame.minY
-    let spaceAbove = visibleFrame.maxY - cursorPosition.y
+    // Vertical positioning: top of popup at cursor Y (popup extends downward)
+    point.y = cursorPosition.y - size.height
 
-    if spaceBelow >= size.height {
-      // Enough space below cursor - position popup below
-      point.y = cursorPosition.y - size.height
-    } else if spaceAbove >= size.height {
-      // Not enough space below, but enough above - position popup above cursor
-      point.y = cursorPosition.y
-    } else {
-      // Not enough space either way - position at bottom of visible area
-      point.y = visibleFrame.minY
-    }
-
-    // Horizontal positioning: center on cursor, then constrain to screen
-    point.x = cursorPosition.x - size.width / 2
+    // Horizontal positioning: left edge at cursor X
+    point.x = cursorPosition.x
 
     return constrainToScreen(point, size: size, screen: screen)
   }
