@@ -26,27 +26,27 @@ enum PopupPosition: String, CaseIterable, Identifiable, CustomStringConvertible,
     }
   }
 
-  // swiftlint:disable:next cyclomatic_complexity
+  // swiftlint:disable:next cyclomatic_complexity function_body_length
   func origin(size: NSSize, statusBarButton: NSStatusBarButton?) -> NSPoint {
+    let cursorPosition = NSEvent.mouseLocation
+    let screen = NSScreen.screenContainingCursor ?? NSScreen.main
+
     switch self {
     case .center:
       if let frame = NSScreen.forPopup?.visibleFrame {
-        return NSRect.centered(ofSize: size, in: frame).origin
+        return constrainToScreen(NSRect.centered(ofSize: size, in: frame).origin, size: size, screen: screen)
       }
     case .window:
       if let frame = NSWorkspace.shared.frontmostApplication?.windowFrame {
-        return NSRect.centered(ofSize: size, in: frame).origin
+        return constrainToScreen(NSRect.centered(ofSize: size, in: frame).origin, size: size, screen: screen)
       }
     case .statusItem:
-      if let statusBarButton, let screen = NSScreen.main {
+      if let statusBarButton, let buttonScreen = NSScreen.main {
         let rectInWindow = statusBarButton.convert(statusBarButton.bounds, to: nil)
         if let screenRect = statusBarButton.window?.convertToScreen(rectInWindow) {
           var topLeftPoint = NSPoint(x: screenRect.minX, y: screenRect.minY - size.height)
-          // Ensure that window doesn't spill over to the right screen.
-          if (topLeftPoint.x + size.width) > screen.frame.maxX {
-            topLeftPoint.x = screen.frame.maxX - size.width
-          }
-
+          // Ensure popup doesn't spill over screen edges
+          topLeftPoint = constrainToScreen(topLeftPoint, size: size, screen: buttonScreen)
           return topLeftPoint
         }
       }
@@ -56,14 +56,71 @@ enum PopupPosition: String, CaseIterable, Identifiable, CustomStringConvertible,
         let anchorX = frame.minX + frame.width * relativePos.x
         let anchorY = frame.minY + frame.height * relativePos.y
         // Anchor is top middle of frame
-        return NSPoint(x: anchorX - size.width / 2, y: anchorY - size.height)
+        let point = NSPoint(x: anchorX - size.width / 2, y: anchorY - size.height)
+        return constrainToScreen(point, size: size, screen: screen)
       }
-    default:
+    case .cursor:
       break
     }
 
-    var point = NSEvent.mouseLocation
-    point.y -= size.height
-    return point
+    // Default: position at cursor with intelligent boundary handling
+    return positionAtCursor(cursorPosition: cursorPosition, size: size, screen: screen)
+  }
+
+  /// Position popup near cursor, intelligently adjusting to stay within screen bounds
+  private func positionAtCursor(cursorPosition: NSPoint, size: NSSize, screen: NSScreen?) -> NSPoint {
+    guard let visibleFrame = screen?.visibleFrame else {
+      // Fallback: just position below cursor
+      return NSPoint(x: cursorPosition.x, y: cursorPosition.y - size.height)
+    }
+
+    var point = cursorPosition
+
+    // Determine vertical positioning: prefer below cursor, but flip above if needed
+    let spaceBelow = cursorPosition.y - visibleFrame.minY
+    let spaceAbove = visibleFrame.maxY - cursorPosition.y
+
+    if spaceBelow >= size.height {
+      // Enough space below cursor - position popup below
+      point.y = cursorPosition.y - size.height
+    } else if spaceAbove >= size.height {
+      // Not enough space below, but enough above - position popup above cursor
+      point.y = cursorPosition.y
+    } else {
+      // Not enough space either way - position at bottom of visible area
+      point.y = visibleFrame.minY
+    }
+
+    // Horizontal positioning: center on cursor, then constrain to screen
+    point.x = cursorPosition.x - size.width / 2
+
+    return constrainToScreen(point, size: size, screen: screen)
+  }
+
+  /// Constrain a point so the popup stays within the visible screen bounds
+  private func constrainToScreen(_ point: NSPoint, size: NSSize, screen: NSScreen?) -> NSPoint {
+    guard let visibleFrame = screen?.visibleFrame else {
+      return point
+    }
+
+    var constrainedPoint = point
+
+    // Constrain horizontal position
+    if constrainedPoint.x + size.width > visibleFrame.maxX {
+      constrainedPoint.x = visibleFrame.maxX - size.width
+    }
+    if constrainedPoint.x < visibleFrame.minX {
+      constrainedPoint.x = visibleFrame.minX
+    }
+
+    // Constrain vertical position
+    if constrainedPoint.y < visibleFrame.minY {
+      constrainedPoint.y = visibleFrame.minY
+    }
+    if constrainedPoint.y + size.height > visibleFrame.maxY {
+      constrainedPoint.y = visibleFrame.maxY - size.height
+    }
+
+    return constrainedPoint
   }
 }

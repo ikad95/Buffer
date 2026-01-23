@@ -1,4 +1,5 @@
 import AppKit.NSScreen
+import AppKit.NSEvent
 import Defaults
 
 extension NSScreen {
@@ -8,6 +9,14 @@ extension NSScreen {
       return NSScreen.main
     } else {
       return NSScreen.screens[desiredScreen - 1]
+    }
+  }
+
+  /// Returns the screen that contains the current cursor position
+  static var screenContainingCursor: NSScreen? {
+    let cursorLocation = NSEvent.mouseLocation
+    return NSScreen.screens.first { screen in
+      screen.frame.contains(cursorLocation)
     }
   }
 }

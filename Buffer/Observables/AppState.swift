@@ -196,6 +196,13 @@ class AppState: Sendable {
             toolbarIcon: NSImage.gearshape2!
           ) {
             AdvancedSettingsPane()
+          },
+          Settings.Pane(
+            identifier: Settings.PaneIdentifier.about,
+            title: "About",
+            toolbarIcon: NSImage.infocircle!
+          ) {
+            AboutSettingsPane()
           }
         ]
       )
