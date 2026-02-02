@@ -11,7 +11,7 @@ class ClipboardTests: XCTestCase {
                                          attributes: [.foregroundColor: NSColor.red])
 
   let dynamicType = NSPasteboard.PasteboardType(rawValue: "dyn.ah62d4qmxhk4d425try1g44pdsm11g55gsu1e82xnqzv")
-  let customType = NSPasteboard.PasteboardType(rawValue: "org.maccy.ConfidentialType")
+  let customType = NSPasteboard.PasteboardType(rawValue: "org.buffer.ConfidentialType")
   let fileURLType = NSPasteboard.PasteboardType.fileURL
   let htmlType = NSPasteboard.PasteboardType.html
   let rtfType = NSPasteboard.PasteboardType.rtf

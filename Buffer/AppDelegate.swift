@@ -8,11 +8,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
   @objc
   private lazy var statusItem: NSStatusItem = {
     let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-    statusItem.behavior = .removalAllowed
     statusItem.button?.action = #selector(performStatusItemClick)
     statusItem.button?.image = Defaults[.menuIcon].image
     statusItem.button?.imagePosition = .imageLeft
     statusItem.button?.target = self
+    statusItem.isVisible = Defaults[.showInStatusBar]
     return statusItem
   }()
 
@@ -40,6 +40,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         Defaults[.showInStatusBar] = newValue
       }
     }
+
+    // Force visibility on startup based on user preference
+    statusItem.isVisible = Defaults[.showInStatusBar]
 
     Task {
       for await value in Defaults.updates(.showInStatusBar) {
@@ -116,6 +119,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
       UserDefaults.standard.removeObject(forKey: "hideTitle")
 
       Defaults[.migrations]["2024-07-01-version-2"] = true
+    }
+
+    // Migrate menuIcon from "maccy" to "buffer" (renamed in Buffer fork)
+    if UserDefaults.standard.string(forKey: "menuIcon") == "maccy" {
+      Defaults[.menuIcon] = .buffer
     }
 
     // The following defaults are not used in Buffer 2.x
